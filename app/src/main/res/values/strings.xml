@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GoozixTest</string>
+    <string name="string_getting_json_title">Waiting...</string>
+    <string name="string_getting_json_message">Getting information</string>
+    <string name="string_some_thing_vrong">Sorry,  fail...</string>
+    <string name="internet_connection_not_available">Sorry, your internet connection not available</string>
+</resources>
