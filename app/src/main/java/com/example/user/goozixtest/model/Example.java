@@ -1,15 +1,15 @@
 package com.example.user.goozixtest.model;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Example {
-
     @SerializedName("login")
     @Expose
     private String login;
     @SerializedName("id")
     @Expose
-    private Integer id;
+    private int id;
     @SerializedName("node_id")
     @Expose
     private String nodeId;
@@ -57,7 +57,7 @@ public class Example {
     private String type;
     @SerializedName("site_admin")
     @Expose
-    private Boolean siteAdmin;
+    private boolean siteAdmin;
     @SerializedName("name")
     @Expose
     private String name;
@@ -81,16 +81,16 @@ public class Example {
     private String bio;
     @SerializedName("public_repos")
     @Expose
-    private Integer publicRepos;
+    private int publicRepos;
     @SerializedName("public_gists")
     @Expose
-    private Integer publicGists;
+    private int publicGists;
     @SerializedName("followers")
     @Expose
-    private Integer followers;
+    private int followers;
     @SerializedName("following")
     @Expose
-    private Integer following;
+    private int following;
     @SerializedName("created_at")
     @Expose
     private String createdAt;
@@ -106,11 +106,11 @@ public class Example {
         this.login = login;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -234,11 +234,11 @@ public class Example {
         this.type = type;
     }
 
-    public Boolean getSiteAdmin() {
+    public boolean isSiteAdmin() {
         return siteAdmin;
     }
 
-    public void setSiteAdmin(Boolean siteAdmin) {
+    public void setSiteAdmin(boolean siteAdmin) {
         this.siteAdmin = siteAdmin;
     }
 
@@ -298,35 +298,35 @@ public class Example {
         this.bio = bio;
     }
 
-    public Integer getPublicRepos() {
+    public int getPublicRepos() {
         return publicRepos;
     }
 
-    public void setPublicRepos(Integer publicRepos) {
+    public void setPublicRepos(int publicRepos) {
         this.publicRepos = publicRepos;
     }
 
-    public Integer getPublicGists() {
+    public int getPublicGists() {
         return publicGists;
     }
 
-    public void setPublicGists(Integer publicGists) {
+    public void setPublicGists(int publicGists) {
         this.publicGists = publicGists;
     }
 
-    public Integer getFollowers() {
+    public int getFollowers() {
         return followers;
     }
 
-    public void setFollowers(Integer followers) {
+    public void setFollowers(int followers) {
         this.followers = followers;
     }
 
-    public Integer getFollowing() {
+    public int getFollowing() {
         return following;
     }
 
-    public void setFollowing(Integer following) {
+    public void setFollowing(int following) {
         this.following = following;
     }
 

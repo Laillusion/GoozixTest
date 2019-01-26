@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         example = new ArrayList<>();
 
+
         recyclerView = findViewById(R.id.users);
         adapter = new UserAdapter(MainActivity.this, example);
         recyclerView.setAdapter(adapter);
@@ -85,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar.make(view, R.string.internet_connection_not_available, Snackbar.LENGTH_LONG).show();
                 }
             }
+
+
         });
+
+
 
     }
 

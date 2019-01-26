@@ -6,6 +6,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 public interface ApiService {
     /*
@@ -14,6 +15,9 @@ public interface ApiService {
         */
     @GET("users?since=13")
     Call<List<Example>> getMyJSON();  //метод для получения списков всех контактов
+
+    @GET("users/{login}")
+    Call<Example> getUser(@Path("login") String login);  //метод для получения одного контакта
 
 }
 /* add pagination */

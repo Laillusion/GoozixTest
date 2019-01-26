@@ -20,6 +20,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     private static List<Example> example;
 
 
+
     private LayoutInflater inflater;
 
     static Context context;
@@ -68,8 +69,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         final ImageView photoView;
-         TextView login;
-         TextView id;
+        TextView login;
+        TextView id;
 
         ViewHolder(View itemView) {
             super(itemView);
@@ -79,15 +80,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
             id = itemView.findViewById(R.id.tvId);
         }
 
-    @Override
+        @Override
         public void onClick(View view) {
             int position = getAdapterPosition();
-        if (position != RecyclerView.NO_POSITION) {
-            Example examples = example.get(position);
-            UserDetailsActivity.start(context, examples);
-        }
-    }
+            if (position != RecyclerView.NO_POSITION) {
+                Example examples = example.get(position);
+                UserDetailsActivity.start(context, examples);
 
+            }
+        }
     }
 
 }
