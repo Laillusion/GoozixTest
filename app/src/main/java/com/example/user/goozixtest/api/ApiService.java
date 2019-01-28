@@ -13,7 +13,7 @@ public interface ApiService {
        Retrifit get annotation with our URL
        And our method that will return us the List of MovieList
         */
-    @GET("users?since=13")
+    @GET("users?since=135")
     Call<List<Example>> getMyJSON();  //метод для получения списков всех контактов
 
     @GET("users/{login}")

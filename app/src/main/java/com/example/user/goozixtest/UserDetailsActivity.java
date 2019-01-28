@@ -77,7 +77,7 @@ public class UserDetailsActivity extends AppCompatActivity {
 
                     Example examples = response.body();
 
-                    tvEmail.setText((CharSequence) examples.getEmail());
+                    tvEmail.setText(examples.getEmail());
                     tvFollowing.setText(String.valueOf(examples.getFollowing()));
                     tvFollowers.setText(String.valueOf(examples.getFollowers()));
                     tvOrganization.setText(examples.getCompany());

@@ -72,10 +72,10 @@ public class Example {
     private String location;
     @SerializedName("email")
     @Expose
-    private Object email;
+    private String email;
     @SerializedName("hireable")
     @Expose
-    private Object hireable;
+    private boolean hireable;
     @SerializedName("bio")
     @Expose
     private String bio;
@@ -274,19 +274,19 @@ public class Example {
         this.location = location;
     }
 
-    public Object getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Object email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public Object getHireable() {
+    public boolean isHireable() {
         return hireable;
     }
 
-    public void setHireable(Object hireable) {
+    public void setHireable(boolean hireable) {
         this.hireable = hireable;
     }
 
@@ -342,7 +342,4 @@ public class Example {
         return updatedAt;
     }
 
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
 }
